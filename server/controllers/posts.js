@@ -32,7 +32,7 @@ export const getPosts2 = async (req, res) => {
 
 export const getPosts3 = async (req, res) => {
     try {
-        const posts = await PostModel.find();
+        const posts3 = await PostModel.find();
         console.log('post', posts);
         res.status(200).json(posts);
     } catch (err) {
