@@ -30,6 +30,16 @@ export const getPosts2 = async (req, res) => {
     }
 };
 
+export const getPosts3 = async (req, res) => {
+    try {
+        const posts = await PostModel.find();
+        console.log('post', posts);
+        res.status(200).json(posts);
+    } catch (err) {
+        err.status(500).json(err);
+    }
+};
+
 export const createPost = async (req, res) => {
     try {
         const newPost = req.body;
