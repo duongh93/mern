@@ -2,7 +2,7 @@ import {PostModel} from "../models/PostModel.js";
 
 export const getPosts = async (req, res) => {
     try {
-        //commit 4
+        //commit 5
         const posts = await PostModel.find();
         console.log('post', posts);
         res.status(200).json(posts);
