@@ -5,6 +5,7 @@ export const getPosts = async (req, res) => {
         //commit 6
         //commit 7
         //commit 8
+        //commit branch2 1
         const posts = await PostModel.find();
         console.log('post', posts);
         res.status(200).json(posts);
