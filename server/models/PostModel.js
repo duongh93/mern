@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-
+//commit 7
 const schema = new mongoose.Schema({
     title: {
         type: String,
